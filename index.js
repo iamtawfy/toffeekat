@@ -32,7 +32,7 @@ function answer(response) {
     const date = new Date();
     const day = date.getDate();
     console.log(day)
-    if (day === 7) {
+    if (day === 6) {
       window.location.href = "Hug.html";
     } else if (day === 13) {
       window.location.href = "chocolate.html";
