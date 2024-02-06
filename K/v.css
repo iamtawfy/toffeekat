@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  color: #e91e63;
+}
+
+.image-container {
+  margin-top: 20px; /* Margin at the top of the image container */
+  margin-bottom: 40px; /* Margin at the bottom of the image container */
+  margin-left: auto; /* Auto left margin (centers the container horizontally) */
+  margin-right: auto; /* Auto right margin (centers the container horizontally) */
+  width: 200px; /* Fixed width for the image container */
+  height: 200px; /* Fixed height for the image container */
+  overflow: hidden; /* Hide any overflow from the image */
+  position: relative; /* Position relative for absolute positioning of the image */
+}
+
+.image-container img {
+  position: absolute; /* Position the image within the container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the image precisely */
+  width: 100%; /* Ensure the image fills the container horizontally */
+  height: auto; /* Allow the image to scale proportionally */
+}
+
+
+
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #e91e63;
+  color: white;
+  cursor: pointer;
+}
+
+
+.container {
+  position: relative; /* Ensure buttons are positioned relative to the container */
+}
+
+.yes-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  cursor: pointer;
+}
