@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  margin-top: 20px;
+  color: #e91e63;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 10px; /* Rounded corners for the content container */
+  overflow: hidden; /* Ensure child elements don't overflow */
+  max-width: 1800px; /* Set maximum width */
+  width: 90%; /* Set relative width */
+  max-height: 500px;
+  margin: 0 auto; /* Center the div */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow for separation */
+}
+
+.left,
+.right {
+  width: 50%;
+  border-radius: 10px; /* Rounded corners for the left and right sections */
+}
+
+.left {
+  overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.left img {
+  max-width: 100%;
+  height: auto;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  line-height: 0; /* Reset line-height */
+  vertical-align: bottom; /* Reset vertical-align */
+}
+
+.right p {
+  padding: 0 20px;
+  text-align: left;
+  font-size: 16px;
+  font-family: monospace; /* Use monospace font for text content */
+}
+
+input[type="number"],
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #e91e63;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 30px; /* Adjust font size as needed */
+  font-weight: bold; /* Make the font bold */
+  text-decoration: none;
+  color: #333;
+}
+
+
+.random-heart {
+  position: fixed;
+  color: red;
+  font-size: 24px;
+  animation: float 4s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-100px) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-200px) scale(1);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+.left {
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+  position: relative; /* Position the arrow buttons relative to the video container */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#videoPlayer {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px; /* Ensure the video container has rounded corners */
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #333; /* Darker color */
+  font-size: 32px; /* Larger font size */
+  cursor: pointer;
+}
+
+#prevButton {
+  left: 10px; /* Adjusted position */
+}
+
+#nextButton {
+  right: 10px; /* Adjusted position */
+}
+
+

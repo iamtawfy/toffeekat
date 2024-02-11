@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,14 +8,28 @@
 </head>
 <body>
   <div class="container">
-    <h1>Will You Be My Valentine?</h1>
-    <div class="image-container">
-      <img id="bear" src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="bear sticker">
+    <div id="options">
+      <h1>Will You Be My Valentine?</h1>
+      <div class="image-container">
+        <img id="bear" src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="bear sticker">
+      </div>
+      <button onclick="answer('yes')">Yes</button>
+      <button onclick="answer('no')">No</button>
     </div>
-    <button onclick="answer('yes')">Yes</button>
-    <button onclick="answer('no')">No</button>
+
+    <div id="info-icon" class="info-icon" onclick="showInfo()">ℹ️</div>
+    
+    <h1 id="confirmationHead"></h1>
+    <p id="confirmationMessage"></p>
+    <button id="confirmButton" onclick="answer('yes')">Next</button>
   </div>
-  
+
+  <div id="info-popup" class="info-popup">
+    <span class="close" onclick="hideInfo()">X</span>
+    <p>Play by clicking No for a while.</p>
+    <p>This website will change automatically for the next two days based on the date.</p>
+    <p>Come back every day for more.</p>
+  </div>
   <script src="index.js"></script>
 </body>
 </html>
