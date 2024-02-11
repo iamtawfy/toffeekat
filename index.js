@@ -53,12 +53,12 @@ function answer(response) {
     const date = new Date();
     const day = date.getDate();
     console.log(day)
-    if (day === 11) {
+    if (day === 12) {
     window.location.href = "Hug/Hug.html";
     } else if (day === 13) {
       window.location.href = "Kiss/Kiss.html";
     }
-    else if (day === 12) {
+    else if (day === 14) {
       window.location.href = "Valentines/Valentines.html";
     }
     localStorage.setItem('valentineResponse', true);
