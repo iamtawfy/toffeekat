@@ -81,3 +81,18 @@ button {
   text-decoration: none;
   color: #333;
 }
+
+
+
+.contentss {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 10px; /* Rounded corners for the content container */
+  overflow: hidden; /* Ensure child elements don't overflow */
+  max-width: 1800px; /* Set maximum width */
+  width: 90%; /* Set relative width */
+  max-height: 500px;
+  margin: 0 auto; /* Center the div */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow for separation */
+}
