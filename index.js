@@ -2,6 +2,9 @@ window.onload = function() {
 
   var previousResponse = localStorage.getItem('valentineResponse');
   console.log(previousResponse);
+  if(localStorage.getItem('indec') == null){
+    localStorage.setItem('indec',0);
+  }
   if(previousResponse){
     function createRandomHeart() {
       const heart = document.createElement('div');
@@ -49,17 +52,29 @@ let gifIndex = 0;
 
 function answer(response) {
   console.log(response)
+  let indec = localStorage.getItem('indec');
   if (response === 'yes') {
     const date = new Date();
     const day = date.getDate();
     console.log(day)
-    if (day === 12) {
+    // if (day === 12) {
+    // window.location.href = "Hug/Hug.html";
+    // } else if (day === 13) {
+    //   window.location.href = "Kiss/Kiss.html";
+    // }
+    // else if (day === 14) {
+    //   window.location.href = "Valentines/Valentines.html";
+    // }
+    if (indec == 0) {
     window.location.href = "Hug/Hug.html";
-    } else if (day === 13) {
+    localStorage.setItem('indec', 1);
+    } else if (indec == 1) {
       window.location.href = "Kiss/Kiss.html";
+      localStorage.setItem('indec', 2);
     }
-    else if (day === 14) {
+    else if (indec == 2) {
       window.location.href = "Valentines/Valentines.html";
+      localStorage.setItem('indec', 0);
     }
     localStorage.setItem('valentineResponse', true);
   } 
