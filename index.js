@@ -57,25 +57,28 @@ function answer(response) {
     const date = new Date();
     const day = date.getDate();
     console.log(day)
-    // if (day === 12) {
-    // window.location.href = "Hug/Hug.html";
-    // } else if (day === 13) {
-    //   window.location.href = "Kiss/Kiss.html";
-    // }
-    // else if (day === 14) {
-    //   window.location.href = "Valentines/Valentines.html";
-    // }
-    if (indec == 0) {
+    if (day ===11) {
+      window.location.href = "Promise/Promise.html";
+    }
+    else if (day === 12) {
     window.location.href = "Hug/Hug.html";
-    localStorage.setItem('indec', 1);
-    } else if (indec == 1) {
+    } else if (day === 13) {
       window.location.href = "Kiss/Kiss.html";
-      localStorage.setItem('indec', 2);
     }
-    else if (indec == 2) {
+    else if (day === 14) {
       window.location.href = "Valentines/Valentines.html";
-      localStorage.setItem('indec', 0);
     }
+    // if (indec == 0) {
+    //   window.location.href = "Hug/Hug.html";
+    //   localStorage.setItem('indec', 1);
+    // } else if (indec == 1) {
+    //   window.location.href = "Kiss/Kiss.html";
+    //   localStorage.setItem('indec', 2);
+    // }
+    // else if (indec == 2) {
+    //   window.location.href = "Valentines/Valentines.html";
+    //   localStorage.setItem('indec', 0);
+    // }
     localStorage.setItem('valentineResponse', true);
   } 
   else if (response === 'no') {
